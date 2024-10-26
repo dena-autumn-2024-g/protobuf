@@ -30,7 +30,7 @@ message JoinRoomRequest {
 }
 
 message JoinRoomResponse {
-  string user_id = 1; // ユーザーID
+  int32 user_id = 1; // ユーザーID
 }
 
 message CloseRoomResponse {};
