@@ -3,12 +3,13 @@ syntax = "proto3";
 package water_ring;
 
 // 部屋の作成リクエストとレスポンス
-message CreateRoomRequest {}
+message CreateRoomRequest {
+  int32 user_limit = 1; // ユーザー数の上限
+}
 
 message CreateRoomResponse {
   string room_url = 1; // 入室用のURL
   string room_id = 2;  // (UUID)
-  int32 user_limit = 3; // ユーザー数の上限
 }
 
 // 部屋を閉じるリクエスト
