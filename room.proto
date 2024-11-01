@@ -8,6 +8,7 @@ message CreateRoomRequest {}
 message CreateRoomResponse {
   string room_url = 1; // 入室用のURL
   string room_id = 2;  // (UUID)
+  int32 user_limit = 3; // ユーザー数の上限
 }
 
 // 部屋を閉じるリクエスト
